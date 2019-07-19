@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Bio from '../components/Bio';
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -13,7 +14,7 @@ class Layout extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
+            ...scale(1),
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
@@ -62,8 +63,10 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
+        <hr />
         <footer>
-          © {new Date().getFullYear()} Matthew Ardi
+          <Bio />
+          <p>© {new Date().getFullYear()} Matthew Ardi</p>
           <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
             </a>
             <br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> Creative Commons Attribution-ShareAlike 4.0 International License
