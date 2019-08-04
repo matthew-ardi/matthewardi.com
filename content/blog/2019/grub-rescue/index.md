@@ -1,7 +1,7 @@
 ---
 title: Removing Grub Rescue Mode after Deleting Ubuntu
 date: "2019-08-04T13:46:23.000Z"
-description: More than 2 years ago, I made a big decision of switching my personal devices and software Ecosystem from iOS into Android. Since I made that decision up...
+description: I recently moved all of my personal development environment into my macbook pro, so I just spent some time cleaning up...
 ---
 
 I recently moved all of my personal development environment into my macbook pro, so I just spent some time cleaning up my Windows PC throughout the weekend. A while ago, I set up a dual-boot Windows & Ubuntu (My PC native OS is Windows 10 Home). I encountered an issue where my PC boot-up mode entered and stuck in `grub rescue>` mode. Here's how I managed to solve it
@@ -17,6 +17,7 @@ For a Ubuntu to exist in a dual-boot system, it had to be set up in a partition 
 1. On windows search bar, type `partition` then you should be directed to a few options. You want to choose `Create and format hard disk partitions`. You can also find this under the good old control panel
 
 ![Disk Management Panel Example](./disk-partition1.jpg)
+
 Example view of the Disk Management Panel
 
 2. You need to know which drive you use for Ubuntu. Right click on the drive and select `Delete Volume` to delete the Ubuntu system
@@ -70,7 +71,9 @@ Now you can use the USB drive with Windows image to get away from the grub rescu
 4. You will be prompted a Windows Installation Panel. Select `Next`.
 5. On the bottom left of the screen, select `repair your computer`
 6. Select `Command Prompt` option
+
 ![USB Drive Windows Image Boot view](./windows-repair.png)
+
 7. Enter the command to fix the master boot record
 
         > bootrec /fixmbr
