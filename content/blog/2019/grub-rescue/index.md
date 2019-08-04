@@ -16,7 +16,7 @@ For a Ubuntu to exist in a dual-boot system, it had to be set up in a partition 
 
 1. On windows search bar, type `partition` then you should be directed to a few options. You want to choose `Create and format hard disk partitions`. You can also find this under the good old control panel
 
-![Disk Management Panel Example](./disk-partition1.jpg)
+![Disk Management Panel Example](disk-partition1.jpg)
 
 Example view of the Disk Management Panel
 
