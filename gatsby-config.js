@@ -140,5 +140,5 @@ module.exports = {
   //   },
 
   ],
-  pathPrefix: "/",
+  // pathPrefix: "/",
 }
